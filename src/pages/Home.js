@@ -57,8 +57,12 @@ const Home = () => {
             h-14
             "
             >
-              <div className="text-[#919395]">DEVELOPED BY SHEHRYAR</div>
-              <div className="text-[#919395]">©2023 COPYRIGHT</div>
+              <div className="text-[#919395] text-sm md:text-md">
+                DEVELOPED BY SHEHRYAR
+              </div>
+              <div className="text-[#919395] text-sm md:text-md">
+                ©2023 COPYRIGHT
+              </div>
               <div className="text-[#919395] hidden md:block">SINCE.2012</div>
             </div>
           </div>
