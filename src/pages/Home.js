@@ -61,7 +61,7 @@ const Home = () => {
                 DEVELOPED BY SHEHRYAR
               </div>
               <div className="text-[#919395] text-sm md:text-md">
-                ©2023 COPYRIGHT
+                ©2023 COPYRIGHTttt
               </div>
               <div className="text-[#919395] hidden md:block">SINCE.2012</div>
             </div>
