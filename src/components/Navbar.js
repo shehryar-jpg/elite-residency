@@ -36,14 +36,14 @@ const Navbar = () => {
               </p>
             </div>
           </div>
-
+          {/* Button was here */}
           <img
             onClick={() => {
               handleMobileNavToggle();
             }}
             src={hamburger}
             alt=""
-            className="h-16 "
+            className="h-16"
           />
         </Fade>
       </div>
