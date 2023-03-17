@@ -32,27 +32,27 @@ const Navbar = () => {
             <div className="flex space-x-5">
               <p className="text-[#c5c5c5] text-sm cursor-pointer ">FEATURES</p>
               <p className="text-[#c5c5c5] text-sm  cursor-pointer">
-                RESOURCESs
+                RESOURCES
               </p>
             </div>
           </div>
           {/* Button was here */}
-          <img
-            onClick={() => {
-              handleMobileNavToggle();
-            }}
-            src={hamburger}
-            alt=""
-            className="h-16"
-          />
+          <div className="md:hidden block">
+            <img
+              onClick={() => {
+                handleMobileNavToggle();
+              }}
+              src={hamburger}
+              alt=""
+              className="h-16"
+            />
+          </div>
         </Fade>
       </div>
       {toggleMobileNav ? (
         <Fade top distance="2%" duration={710}>
           {" "}
-          <div className="">
-            <MobileNav />
-          </div>
+          <MobileNav />
         </Fade>
       ) : null}
     </>
