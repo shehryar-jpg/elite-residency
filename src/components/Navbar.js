@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Fade } from "react-reveal";
-import logo from ".././images/SVG (3).svg";
+import logo from ".././images/SVG (1).svg";
 import hamburger from ".././images/ham-burger.png";
 
 import MobileNav from "./MobileNav";
@@ -38,14 +38,31 @@ const Navbar = () => {
           </div>
           {/* Button was here */}
           <div className="md:hidden block">
-            <img
-              onClick={() => {
-                handleMobileNavToggle();
-              }}
-              src={hamburger}
-              alt=""
-              className="h-16"
-            />
+            {toggleMobileNav ? (
+              <div className="">
+                <img
+                  onClick={() => {
+                    handleMobileNavToggle();
+                  }}
+                  src={hamburger}
+                  alt=""
+                  className="h-16 rotate-90"
+                />
+              </div>
+            ) : (
+              <div className="">
+                {/* <Fade> */}
+                <img
+                  onClick={() => {
+                    handleMobileNavToggle();
+                  }}
+                  src={hamburger}
+                  alt=""
+                  className="h-16"
+                />
+                {/* </Fade> */}
+              </div>
+            )}
           </div>
         </Fade>
       </div>
