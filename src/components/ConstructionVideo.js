@@ -15,9 +15,9 @@ const ConstructionVideo = () => {
           <ReactPlayer
             ref={playerRef}
             url={VIDEO_PATH}
-            controls={false}
+            controls={true}
             loop={true}
-            playing={true}
+            playing={false}
             volume={0}
             width={size.width}
             height={size.width / 1.78}

@@ -46,7 +46,7 @@ const Navbar = () => {
                   }}
                   src={hamburger}
                   alt=""
-                  className="h-16 rotate-90"
+                  className="h-16 -rotate-90"
                 />
               </div>
             ) : (
@@ -66,12 +66,14 @@ const Navbar = () => {
           </div>
         </Fade>
       </div>
-      {toggleMobileNav ? (
-        <Fade top distance="2%" duration={710}>
-          {" "}
-          <MobileNav />
-        </Fade>
-      ) : null}
+      <div className="">
+        {toggleMobileNav ? (
+          <Fade top distance="2%" duration={710}>
+            {" "}
+            <MobileNav />
+          </Fade>
+        ) : null}
+      </div>
     </>
   );
 };
