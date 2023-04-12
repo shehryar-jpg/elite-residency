@@ -17,8 +17,8 @@ const Navbar = () => {
         <Fade bottom distance="35%" duration={710}>
           <div className="left__section md:block hidden">
             <div className="flex space-x-5">
-              <p className="text-[#c5c5c5] text-sm cursor-pointer ">ABOUT</p>
-              <p className="text-[#c5c5c5] text-sm  cursor-pointer ">PROJECT</p>
+              <p className="text-[#c5c5c5] text-sm cursor-pointer "></p>
+              <p className="text-[#c5c5c5] text-sm  cursor-pointer "></p>
             </div>
           </div>
           <div className="mid__section">
@@ -30,10 +30,8 @@ const Navbar = () => {
           </div>
           <div className="right__section md:block hidden">
             <div className="flex space-x-5">
-              <p className="text-[#c5c5c5] text-sm cursor-pointer ">FEATURES</p>
-              <p className="text-[#c5c5c5] text-sm  cursor-pointer">
-                RESOURCES
-              </p>
+              <p className="text-[#c5c5c5] text-sm cursor-pointer "></p>
+              <p className="text-[#c5c5c5] text-sm  cursor-pointer"></p>
             </div>
           </div>
           {/* Button was here */}

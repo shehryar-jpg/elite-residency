@@ -35,10 +35,10 @@ const Header = () => {
           <div className="bottom mx-3  md:w-[30rem] pt-10 md:pt-0">
             <h3 className="text-xl">ABOUT US</h3>
             <p className="text-[#888888]   text-sm">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-              maiores in nihil quod quis explicabo repudiandae ea numquam
-              quaerat doloribus? repudiandae ea numquam amet consectetur
-              adipisicing
+              Elite Residency builds exceptional living spaces. Our latest
+              offerings, Elite Residency 88 and Victoria, reflect our commitment
+              to elite design, affordability, and expert consultancy. Stay tuned
+              for our upcoming project!
             </p>
             <br />
             <p className="flex justify-between">

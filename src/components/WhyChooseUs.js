@@ -27,10 +27,9 @@ const WhyChooseUs = () => {
               <p className="font-bold text-xl mx-5">The Best Price</p>{" "}
             </p>
             <p className="text-sm mx-9 mt-2">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Architecto amet soluta, placeat adipisci, ab voluptatibus totam
-              consequuntur odit animi magni at tenetur eum laudantium? Tempora
-              aspernatur
+              Elite Residency offers the best pricing without compromising on
+              quality or design. Our focus is on providing affordable luxury
+              living that exceeds our customers' expectations.
             </p>
           </Fade>
         </div>
@@ -47,9 +46,10 @@ const WhyChooseUs = () => {
               </p>
 
               <p className="text-sm mx-10  mt-2">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Architecto amet soluta, placeat adipisci, ab voluptatibus totam
-                consequuntur odit animi magni at tenetur eum laudantium? Tempora
+                Our expert consultancy services are designed to help our
+                customers make informed decisions throughout the buying process.
+                We guide them every step of the way, ensuring a smooth and
+                hassle-free experience.
               </p>
             </Fade>
           </div>
@@ -64,13 +64,12 @@ const WhyChooseUs = () => {
             >
               <p className="text-sm flex items-center">
                 <p className="text-gray-400">03</p>{" "}
-                <p className="font-bold text-xl mx-5">Custom Design</p>{" "}
+                <p className="font-bold text-xl mx-5">Elite Design</p>{" "}
               </p>
               <p className="text-sm mx-10 mt-2">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Architecto amet soluta, placeat adipisci, ab voluptatibus totam
-                consequuntur odit animi magni at tenetur eum laudantium? Tempora
-                aspernatur incidunt earum officia a.
+                Elite Residency is committed to elite design, creating living
+                spaces that are not only functional but also aesthetically
+                pleasing and visually stunning.
               </p>
             </Fade>
           </div>
@@ -87,10 +86,9 @@ const WhyChooseUs = () => {
                 <p className="font-bold text-xl mx-5">Premium Quality</p>{" "}
               </p>
               <p className="text-sm mx-10 mt-2">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Architecto amet soluta, placeat adipisci, ab voluptatibus totam
-                consequuntur odit animi magni at tenetur eum laudantium? Tempora
-                aspernatur incidunt earum officia a.
+                Elite Residency delivers premium quality in every aspect of our
+                work, from the materials we use to the finishing touches,
+                ensuring that our customers receive nothing but the best.
               </p>
             </Fade>
           </div>
