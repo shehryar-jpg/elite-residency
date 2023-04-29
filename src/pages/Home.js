@@ -30,57 +30,8 @@ const Home = () => {
   return (
     <>
       <div className="relative">
-        {/* Overlay */}
-        {showOverlay && (
-          <div
-            className="fixed  top-0 overflow-scroll left-0 w-full h-full   z-50
-          
-          
-          
-          "
-          >
-            <div
-              ref={overlayRef}
-              className="absolute my-[90%] w-[80%] md:w-auto
-                top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-            >
-              {/* Your content inside the overlay */}
-              <div className="bg-white p-3 rounded-xl border border-gray-200  ">
-                <div className="flex justify-between items-center ">
-                  <div className="">
-                    <h1 className="font-semibold text-lg tracking-wide">
-                      Tower 88
-                    </h1>
-                  </div>
-                  <i
-                    onClick={() => {
-                      setShowOverlay(false);
-                      document.body.classList.remove("overflow-hidden");
-                    }}
-                    class="fa-solid fa-x cursor-pointer text-[#222222]   "
-                  ></i>
-                </div>
-                {overflowData.map((img) => (
-                  <div className="py-2">
-                    {" "}
-                    <img
-                      src={img.img}
-                      className="w-[80rem]   object-cover  rounded-md   "
-                      alt=""
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
-
         {/* Rest of the application */}
-        <div
-          className={`${
-            showOverlay ? "opacity-80 overflow-hidden" : "overflow-hidden"
-          }`}
-        >
+        <div className={``}>
           {/* Your application content goes here... */}
           <div className="    ">
             {/* Gradient Header section */}

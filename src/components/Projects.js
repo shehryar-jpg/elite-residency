@@ -12,8 +12,9 @@ import victoria_project from "../images/victoria-project.png";
 import building_with_cloth from "../images/building.jpg";
 import { Fade } from "react-reveal";
 import OverFlowContext1 from "../context/OverFlowContext";
-
+import { useNavigate } from "react-router-dom";
 const Projects = () => {
+  const navigate = useNavigate();
   const { showOverlay, setShowOverlay, setOverFlowData, overflowData } =
     useContext(OverFlowContext1);
 
@@ -42,29 +43,29 @@ const Projects = () => {
       <div className="container  grid grid-cols-1 lg:grid-cols-3 gap-3 mx-auto mt-12">
         <div
           onClick={() => {
-            setOverFlowData([
-              {
-                img: tower_88_living_room,
-              },
-              {
-                img: tower_88_kitchen,
-              },
-              {
-                img: tower_88_bedroom,
-              },
+            // setOverFlowData([
+            //   {
+            //     img: tower_88_living_room,
+            //   },
+            //   {
+            //     img: tower_88_kitchen,
+            //   },
+            //   {
+            //     img: tower_88_bedroom,
+            //   },
 
-              {
-                img: tower_88_bedroom_2,
-              },
-              {
-                img: tower_88_bedroom_3,
-              },
-            ]);
-
-            setShowOverlay(true);
-            document.body.classList.add("overflow-hidden");
+            //   {
+            //     img: tower_88_bedroom_2,
+            //   },
+            //   {
+            //     img: tower_88_bedroom_3,
+            //   },
+            // ]);
+            navigate("/projects/tower-88");
+            // setShowOverlay(true);
+            // document.body.classList.add("overflow-hidden");
           }}
-          className="w-full rounded  cursor-pointer "
+          className="w-full rounded   cursor-pointer "
         >
           {/* order-2 lg:order-1 additional tailwind for order on different screens */}
 

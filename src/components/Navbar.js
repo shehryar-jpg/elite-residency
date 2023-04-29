@@ -4,7 +4,9 @@ import logo from ".././images/SVG (1).svg";
 import hamburger from ".././images/ham-burger.png";
 
 import MobileNav from "./MobileNav";
+import { useNavigate } from "react-router-dom";
 const Navbar = () => {
+  const navigate = useNavigate();
   const [toggleMobileNav, setToggleMobileNav] = useState(false);
 
   const handleMobileNavToggle = () => {
@@ -21,11 +23,16 @@ const Navbar = () => {
               <p className="text-[#c5c5c5] text-sm  cursor-pointer "></p>
             </div>
           </div>
-          <div className="mid__section">
+          <div
+            className="mid__section"
+            onClick={() => {
+              navigate("/");
+            }}
+          >
             <img
               src={logo}
               alt=""
-              className="   md:w-auto   h-16  mx-3  my-1 rounded-xl"
+              className="cursor-pointer    md:w-auto   h-16  mx-3  my-1 rounded-xl"
             />
           </div>
           <div className="right__section md:block hidden">
@@ -50,14 +57,14 @@ const Navbar = () => {
             ) : (
               <div className="">
                 {/* <Fade> */}
-                <img
+                {/* <img
                   onClick={() => {
                     handleMobileNavToggle();
                   }}
                   src={hamburger}
                   alt=""
                   className="h-16"
-                />
+                /> */}
                 {/* </Fade> */}
               </div>
             )}
@@ -65,12 +72,12 @@ const Navbar = () => {
         </Fade>
       </div>
       <div className="">
-        {toggleMobileNav ? (
+        {/* {toggleMobileNav ? (
           <Fade top distance="2%" duration={710}>
             {" "}
             <MobileNav />
           </Fade>
-        ) : null}
+        ) : null} */}
       </div>
     </>
   );
