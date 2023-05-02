@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../images/construction-sight-picture.jpg";
+import image from "../images/victoria-project.png";
 import Fade from "react-reveal/Fade";
 
 const ImageHeader = () => {

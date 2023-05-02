@@ -8,25 +8,7 @@ import ConstructionVideo from "../components/ConstructionVideo";
 import Reviews from "../components/Reviews";
 import FrequentlyAsked from "../components/FrequentlyAsked";
 import SubscriptionLetter from "../components/SubscriptionLetter";
-import OverFlowContext1 from "../context/OverFlowContext";
 const Home = () => {
-  const { showOverlay, setShowOverlay, setOverFlowData, overflowData } =
-    useContext(OverFlowContext1);
-
-  const overlayRef = useRef(null);
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (overlayRef.current && !overlayRef.current.contains(event.target)) {
-        setShowOverlay(false);
-        document.body.classList.remove("overflow-hidden");
-      }
-    }
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [overlayRef]);
   return (
     <>
       <div className="relative">
@@ -51,14 +33,14 @@ const Home = () => {
             </div>
             {/* I have not added this section to the margin section because I want the video to occupy the whole width */}
             <div className="max-w-[1360px] mx-auto">
-              <ConstructionVideo />
+              {/* <ConstructionVideo /> */}
             </div>
             {/* <div className="max-w-[1360px] mx-auto"> */}
             {/* <div className="md:px-32 px-5 bg-[#f8f8f8] h-[28rem] "> */}
             {/* <Reviews /> */}
             {/* </div> */}
             {/* </div> */}
-            <div className="bg-[#ffb600] py-12  w-full ">
+            <div className="bg-[#ffb600] py-12  w-full mt-10 ">
               <div className="max-w-[1360px] mx-auto">
                 <FrequentlyAsked />
               </div>

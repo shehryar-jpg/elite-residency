@@ -11,12 +11,9 @@ import tower_88_bedroom_3 from "../images/tower-88-bedroom-3-front.png";
 import victoria_project from "../images/victoria-project.png";
 import building_with_cloth from "../images/building.jpg";
 import { Fade } from "react-reveal";
-import OverFlowContext1 from "../context/OverFlowContext";
 import { useNavigate } from "react-router-dom";
 const Projects = () => {
   const navigate = useNavigate();
-  const { showOverlay, setShowOverlay, setOverFlowData, overflowData } =
-    useContext(OverFlowContext1);
 
   // const duration_for_project_pictures = 1400;
 
@@ -61,7 +58,7 @@ const Projects = () => {
             //     img: tower_88_bedroom_3,
             //   },
             // ]);
-            navigate("/projects/tower-88");
+            navigate("/projects/elite-residency-88");
             // setShowOverlay(true);
             // document.body.classList.add("overflow-hidden");
           }}

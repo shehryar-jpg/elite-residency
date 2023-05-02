@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Fade } from "react-reveal";
 import logo from ".././images/SVG (1).svg";
-import hamburger from ".././images/ham-burger.png";
 
 import MobileNav from "./MobileNav";
 import { useNavigate } from "react-router-dom";
@@ -49,7 +48,7 @@ const Navbar = () => {
                   onClick={() => {
                     handleMobileNavToggle();
                   }}
-                  src={hamburger}
+                  src=""
                   alt=""
                   className="h-16 -rotate-90"
                 />
