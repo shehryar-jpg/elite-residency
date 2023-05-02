@@ -8,6 +8,7 @@ import ConstructionVideo from "../components/ConstructionVideo";
 import Reviews from "../components/Reviews";
 import FrequentlyAsked from "../components/FrequentlyAsked";
 import SubscriptionLetter from "../components/SubscriptionLetter";
+import GoogleMapsFooter from "../components/GoogleMapsFooter";
 const Home = () => {
   return (
     <>
