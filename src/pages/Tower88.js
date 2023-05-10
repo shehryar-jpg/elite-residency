@@ -11,6 +11,13 @@ import tower_88_bedroom_3 from "../images/tower-88-bedroom-3-front.png";
 import tower_88_structure from "../images/elite-residency-88-structure.jpg";
 import bedroom1_360 from "../images/bedroom1-360.jpg";
 import "./Tower88.css";
+import tower88_outside from "../images/1.jpg";
+import tower_88_map_2 from "../images/4.jpg";
+import tower_88_bed_apartment from "../images/2.jpg";
+import tower_88_studio_apartment from "../images/3.jpg";
+
+import tower_88_studio_apartment_structure from "../images/5.jpg";
+import tower_88_bed_apartment_structure from "../images/6.jpg";
 
 const Tower88 = () => {
   useEffect(() => {
@@ -25,41 +32,75 @@ const Tower88 = () => {
           <Navbar />
         </div>
       </div>{" "}
-      <div className="">
-        <h1 className="text-2xl py-5 px-3 md:px-6 font-semibold">
-          Elite Residency 88
-        </h1>
+      <div className="   ">
+        <div className="">
+          <h1 className="text-center md:text-4xl text-3xl py-8 px-3 md:px-6 font-semibold">
+            Elite Residency 88
+          </h1>
+        </div>
+
+        <div class="flex justify-center items-center ">
+          <div class="flex flex-col justify-center items-center w-full px-4 lg:px-20">
+            <div class="flex  flex-col justify-center items-center ">
+              <div class="md:flex flex-col sm:flex-row items-center justify-center w-full">
+                <img
+                  className="rounded-md w-full sm:w-80 lg:w-[50%]"
+                  src={tower88_outside}
+                  alt="Image 1"
+                />
+                <img
+                  className="rounded-md w-full sm:w-80 lg:w-[50%] ml-0 sm:ml-8 mt-4 sm:mt-0"
+                  src={tower_88_map_2}
+                  alt="Image 2"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="flex justify-center items-center ">
+          <div class="flex flex-col justify-center items-center w-full px-4 lg:px-20">
+            <div class="flex  flex-col justify-center items-center ">
+              <div class="md:flex flex-col sm:flex-row items-center justify-center w-full">
+                <img
+                  className="rounded-md w-full sm:w-80 lg:w-[50%]"
+                  src={tower_88_bed_apartment}
+                  alt="Image 1"
+                />
+                <img
+                  className="rounded-md w-full sm:w-80 lg:w-[50%] ml-0 sm:ml-8 mt-4 sm:mt-0"
+                  src={tower_88_studio_apartment}
+                  alt="Image 2"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="flex justify-center items-center ">
+          <div class="flex flex-col justify-center items-center w-full px-4 lg:px-20">
+            <div class="flex  flex-col justify-center items-center ">
+              <div class="md:flex flex-col sm:flex-row items-center justify-center w-full">
+                <img
+                  className="rounded-md w-full sm:w-80 lg:w-[50%]"
+                  src={tower_88_bed_apartment_structure}
+                  alt="Image 1"
+                />
+                <img
+                  className="rounded-md w-full sm:w-80 lg:w-[50%] ml-0 sm:ml-8 mt-4 sm:mt-0"
+                  src={tower_88_studio_apartment_structure}
+                  alt="Image 2"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* <div className="flex items-center ">
+          <img src={tower_88_bed_apart1} alt="" className=" " />
+          <img src={tower_88_bed_apart2} alt="" className=" " />
+        </div> */}
       </div>
-      <AwesomeSlider>
-        <div>
-          <p className="bg-gray-500 rounded-md px-2 text-gray-300 absolute top-[50%] left-[75%] w-20  sm:hidden block">
-            Swipe <i class="fa-solid fa-arrow-right"></i>
-          </p>
-          <img
-            className="object-cover"
-            src={apartment_picture_outside}
-            alt=""
-          />
-        </div>
-        <div>
-          <img className="object-cover" src={tower_88_living_room} alt="" />
-        </div>
-        <div>
-          <img className="object-cover" src={tower_88_kitchen} alt="" />
-        </div>
-        <div>
-          <img className="object-cover" src={tower_88_bedroom} alt="" />
-        </div>
-        <div className="">
-          <img className="object-cover" src={tower_88_bedroom_2} alt="" />
-        </div>
-        <div className="">
-          <img className="object-cover" src={tower_88_bedroom_3} alt="" />
-        </div>
-        <div className="">
-          <img className="object-cover" src={tower_88_structure} alt="" />
-        </div>
-      </AwesomeSlider>
       {/* <div className="my-8">
         <h1 className="text-2xl py-5 px-3 md:px-6 font-semibold">
           360 deg view
